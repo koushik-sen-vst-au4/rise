@@ -1,0 +1,366 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.container{
+    padding: 2rem;
+    background-image: url("./images/marble.png");
+}
+
+.brand-title a {
+    text-decoration: none;
+    color: #24262b;
+    font-size: 2rem;
+}
+
+.container h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.container p{
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.container a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(255, 153, 0, 1);
+}
+
+.training {
+    font-size: 1.5rem;
+}
+.trainer-image{
+    width:100%;
+}
+
+.trainer-image img{
+    display: block;
+    width: 100%;
+    height:480px;
+    object-fit: cover;
+}
+
+
+.trainings {
+    display: flex;
+    background-color: rgba(201, 128, 18, 1);
+    color: white;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.trainings div{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+    -webkit-text-stroke-color: white;
+    animation:move-rtl 5s linear infinite;
+}
+
+@keyframes move-rtl {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.rise-stronger{
+    padding: 2rem;
+    background-color: rgba(39, 39, 41, 1);
+    color: white;
+}
+
+#give-rise-1{
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+    font-weight: 700;
+    color: rgba(201, 128, 18, 1);
+    line-height: 44px;
+}
+
+#give-rise-2{
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 77px;
+}
+
+#give-rise-3{
+    font-size: 2.2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    width: 70%;
+    padding-bottom: 2rem;
+    line-height: 55px;
+}
+
+.rise-enroll {
+   background-color:rgba(255, 153, 0, 1);
+   font-family: 'Plus Jakarta Sans', sans-serif;
+   color: #fff;
+  border-radius: 2rem;
+  font-size: 1.7rem;
+  padding:0.5rem 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  border:none;
+}
+
+/* Navbar */
+
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(240, 238, 234);
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+     letter-spacing: 1px;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    color:#868686;
+    padding-bottom: 5px;
+    text-decoration-line: underline;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+ /* Footer */
+ 
+footer{
+   line-height: 1.5;
+}
+.footer-container{
+	max-width: 1170px;
+	margin:auto;
+	padding: 2rem;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: rgba(201, 128, 18, 1);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+  /* Marqueue starts */
+  
+.marquee {
+    
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+ background-color: rgba(201, 128, 18, 1);
+ flex-wrap: wrap;
+}
+
+
+.marquee__group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.marquee__group span {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  border-right: 4px solid white;
+  padding-left:2rem;
+  padding-right: 2rem;
+  justify-content: center;
+  align-items: center;
+  /*text-transform: uppercase;*/
+  
+}
+
+.marquee__group .no-border {
+    border-right: none;
+}
+/*Marqueue Ends */
+
+
+
+
+
+
+
+
